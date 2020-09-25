@@ -7,10 +7,16 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- In this project I'm also using CSS flexbox properties, which helps in positioning the items in a flexible way.
+    
+  flex-direction: specifies the direction in which the items have to be positioned i.e., either in a row or column
+  justify-content: tells CSS on how to align and space out the flex items -->
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -27,10 +33,11 @@
 
     <div class="container-fluid">
 
-      <!-- Nav Bar -->
+      <!-- Nav Bar: Responsive navigation header, supports branding and navigation -->
 
       <nav class="navbar navbar-expand-lg navbar-dark">
 
+        <!-- navbar-brand: brand name for the company or a project name -->
         <a class="navbar-brand" href="">Shalini Gopalappa</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
@@ -95,7 +102,9 @@
         </div>
         <div class="col">
           <h4>Skills</h4>
-          <div class="progress">
+          <div class="progress"> <!-- indicates the max value of the progress bar -->
+
+            <!-- progress-bar: indicates the progress so far -->
             <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
             <span>90%</span>
           </div>
@@ -129,45 +138,53 @@
 
   <section class="colored-section" id="projects">
     <h2>Projects</h2>
+
+    <!-- carousel: renders the slideshow component -->
     <div id="project-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active container-fluid">
-          <div class="project-title">StudyHub - Mathematical game<br />
+          <div class="project-title">
             <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="left" title="View on GitHub">
               <a href="https://github.com/Shalinigopal8/Maths-game">
                 <i class="fab fa-github"></i>
               </a>
             </button>
+            <p style="margin: 40px 20px 10px 0;">StudyHub - Mathematical game</p>
           </div>
         </div>
         <div class="carousel-item container-fluid">
-          <div class="project-title">Human Activity Tracking<br />
+          <div class="project-title">
             <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="left" title="View on GitHub">
               <a href="https://github.com/Shalinigopal8/Human-Activity-Tracking-SIT782">
                 <i class="fab fa-github"></i>
               </a>
             </button>
+            <p style="margin: 40px 40px 10px 0;">Human Activity Tracking</p>
           </div>
         </div>
         <div class="carousel-item container-fluid">
-          <div class="project-title">Tic-tac-toe Game<br />
+          <div class="project-title">
             <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="left" title="View on GitHub">
               <a href="https://github.com/Shalinigopal8/Tic-Tac-Toe-game">
                 <i class="fab fa-github"></i>
               </a>
             </button>
+            <p style="margin: 40px 80px 10px 0;">Tic-tac-toe Game</p>
           </div>
         </div>
         <div class="carousel-item container-fluid">
-          <div class="project-title">Keeper - Add and/or Delete notes<br />
+          <div class="project-title">
             <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="left" title="View on GitHub">
               <a href="https://github.com/Shalinigopal8/Keeper-project">
                 <i class="fab fa-github"></i>
               </a>
             </button>
+            <p style="margin: 40px 20px 10px 0;">Keeper - Add and/or Delete notes</p>
           </div>
         </div>
       </div>
+
+      <!-- adds previous and next control buttons -->
       <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
@@ -182,19 +199,21 @@
   <section class="white-section" id="contact">
 
     <h2>Contact</h2>
-    <div class="mail">
-      <i class="fas fa-envelope-square contact-icon"></i>
-      <p>shalinigopal8@gmail.com</p>
-    </div>
-    <div class="phone">
-      <i class="fas fa-phone contact-icon"></i>
-      <p>+61 473301228</p>
-    </div>
-    <div class="linkedin">
-      <i class="fab fa-linkedin contact-icon"></i>
-      <a href="https://www.linkedin.com/in/shalini-gopalappa-6b40a6174/">
-        <p>View profile</p>
-      </a>
+    <div class="contact-details">
+      <div class="mail">
+        <i class="fas fa-envelope-square contact-icon"></i>
+        <p style="margin: 5px 0 0 15px;">shalinigopal8@gmail.com</p>
+      </div>
+      <div class="phone">
+        <i class="fas fa-phone contact-icon"></i>
+        <p style="margin: 5px 0 0 15px;">+61 473301228</p>
+      </div>
+      <div class="linkedin">
+        <i class="fab fa-linkedin contact-icon"></i>
+        <a href="https://www.linkedin.com/in/shalini-gopalappa-6b40a6174/">
+          <p style="margin: 5px 0 0 15px;">View profile</p>
+        </a>
+      </div>
     </div>
 
     <!-- Footer -->
